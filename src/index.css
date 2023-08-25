@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+	--primary-color: #003a1a;
+	--second-color: #0fa958;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar-nav a {
+	margin-right: 3rem;
+	color: black;
+}
+
+/* HomePage */
+/* 1 */
+div.head-homepage {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.main-homepage {
+	min-height: 90vh;
+}
+
+.main-homepage img {
+	transform: translate(-135px, -30px);
+	z-index: 1;
+	max-width: 200px;
+}
+
+.main-homepage h2 {
+	font-size: 3.5rem;
+	max-width: 800px;
+	z-index: 2;
+}
+
+.main-homepage p {
+	max-width: 800px;
+	text-align: center;
+}
+
+/* 2 */
+.second-homepage {
+	margin: 8rem 0 5rem 0;
+}
+
+.second-homepage div.box--one {
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 5rem;
+}
+.second-homepage div.box--one h2 {
+	font-size: 2.5rem;
+}
+
+.card-home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.card-home .col {
+	max-width: 400px;
+	height: 400px;
+	margin: 2rem;
+}
+.card-home img {
+	max-width: 200px;
+	margin-bottom: 2rem;
+}
+/* 3 */
+.explore-more {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 8rem 0 8rem 0;
+	overflow-x: hidden;
+}
+.explore-more .explore-one h3 {
+	font-size: 2.5rem;
+}
+img.img-explore {
+	width: 150px;
+}
+/* End Homepage */
+
+/* HeadlinePages */
+div.headline-pages {
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+	padding: 3rem 8rem;
+}
+
+/* About */
+.card-about {
+	max-width: 300px;
+	margin-bottom: 10rem;
+}
+.card-about .card {
+	border: none;
+	padding: 20px;
+}
+.card-about .card p {
+	opacity: 0.7;
+	font-weight: 700;
+}
+.third-content {
+	margin-bottom: 8rem;
+}
+.third-content .right-about {
+	max-width: 600px;
+}
+
+/*  */
+.organization .row .col {
+	max-width: 1000px;
+	margin-bottom: 8rem;
+}
+
+.card-subpage div.card {
+	background-color: #003a1a;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	margin-top: 2rem;
+	padding: 8px 5px;
+	cursor: pointer;
+}
+/*  */
+.form-input {
+	max-width: 500px;
+}
+.form-input input,
+.form-input textarea {
+	width: 100%;
+	border: none;
+	margin-top: 5px;
+	border-radius: 2px;
+	padding: 8px 3px;
+	background-color: #838383;
+	opacity: 0.5;
+}
+.form-input input::placeholder,
+.form-input textarea::placeholder {
+	color: black;
+	padding-left: 10px;
+}
+
+button.btn-send {
+	width: 200px;
+}
+
+.contact {
+	margin: 8rem 3rem 8rem;
+}
+
+/* Footer */
+.footer {
+	margin: 8rem 0 3rem 0;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 992px) {
+	/* HomePage */
+	.main-homepage img {
+		transform: translate(-70px, -30px);
+	}
+	.main-homepage h2 {
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* HomePage */
+	.main-homepage img {
+		transform: translate(-30px, -30px);
+		max-width: 150px;
+	}
+	.main-homepage h2 {
+		font-size: 2.5rem;
+	}
+	img.img-explore {
+		width: 130px;
+	}
+	.card-about {
+		margin-bottom: 1rem;
+	}
+	.card-about .card {
+		margin-top: 2rem;
+	}
+	.third-content {
+		flex-direction: column-reverse;
+	}
+	.third-content img {
+		padding-left: 2rem;
+	}
+	.third-content .right-about {
+		margin: 8rem 0 3rem 0;
+		padding-left: 2rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.main-homepage img {
+		transform: translate(-10px, -90px);
+		max-width: 120px;
+	}
+	.second-homepage div.box--one h2 {
+		font-size: 2rem;
+	}
+	.explore-more .explore-one h3 {
+		font-size: 2rem;
+	}
+}
